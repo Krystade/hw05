@@ -1,0 +1,34 @@
+1. What is the STL? What is a vector?
+	The STL is a library of template classes that gives access to common data structures. A vector is one of these data structures, it is an array that does not have a fixed size.
+
+2. Which vector operations change the size of a vector
+after its construction?
+	push_back()
+	pop_back()
+	insert() 
+	erase() 
+	clear()
+	resize()
+	reserve() shrink_to_fit()
+	
+
+3. What is the STL array container and how does it
+differ from the built-in array and from a vector?
+	An STL array container is a template for an array object that provides additional functionality. An STL array knows its own size and has more inbuilt functions such as size(), fill(), and get(). An STL array is still statically sized while a vector is not.
+
+4. How does the vector member function resize()
+differ from reserve()?
+	resize() will remove any additional elements if it is resized to a smaller size while reserve() will only expand the container or keep it the same size.
+	
+
+5. What should begin() and end() do for a container?
+	begin() should return an iterator to the first element of the container while end() should return an iterator to the last element of the container.
+
+6. Give an example of using the vector push_back()
+modifier
+	
+vector<int> myVector;
+myVector.push_back(10);
+//vector myVector will now contain 10
+myVector.push_back(5)
+//vector myVector will now conatain 10,5
