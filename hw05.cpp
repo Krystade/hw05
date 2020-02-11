@@ -10,9 +10,10 @@
 #include "hw05.h"
 
 int main() {
-	vector<int> L = Lotto(100 ,5);
+	vector<int> winners;
+	winners= Lotto(100 ,5);
 	cout << "Winners are:\n";
-	show(L);
+	show(winners);
 	return 0;
 }
 
