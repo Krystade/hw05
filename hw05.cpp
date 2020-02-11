@@ -12,6 +12,7 @@
 int main() {
 	vector<int> winners;
 	winners= Lotto(100 ,5);
+	cout << "Winners = Lotto(100,5);" << endl;
 	cout << "Winners are:\n";
 	show(winners);
 	return 0;
